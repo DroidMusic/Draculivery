@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://2tptipsk0ln7"]
+
+[ext_resource type="Script" uid="uid://phnfnw0uosl2" path="res://Entities/Player/player.gd" id="1_4ntmi"]
+[ext_resource type="PackedScene" uid="uid://cersundmcs8ax" path="res://Assets/character/marya-eating.fbx" id="2_btcbx"]
+
+[node name="Player" type="Node3D" unique_id=1638159780]
+script = ExtResource("1_4ntmi")
+metadata/_custom_type_script = "uid://dh355b8551r7w"
+
+[node name="marya-eating" parent="." unique_id=77012684 instance=ExtResource("2_btcbx")]

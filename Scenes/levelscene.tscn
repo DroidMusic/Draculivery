@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://s3h0lf7wg1s"]
+
+[ext_resource type="PackedScene" uid="uid://2tptipsk0ln7" path="res://Entities/Player/player.tscn" id="1_uiidf"]
+[ext_resource type="PackedScene" uid="uid://4qssl4o7yfx4" path="res://Entities/Crate/crate.tscn" id="3_qev0w"]
+[ext_resource type="MeshLibrary" uid="uid://bb8e5vspi6oy8" path="res://Assets/mesh_libraries/tileset_mesh_library.meshlib" id="4_sgym1"]
+[ext_resource type="PackedScene" uid="uid://bja30jyv6l7ko" path="res://Entities/Victim/victim.tscn" id="4_wof8y"]
+
+[node name="Levelscene" type="Node3D" unique_id=1418015276]
+
+[node name="GridMap" type="GridMap" parent="." unique_id=956661827 groups=["LevelGridMap"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, -1)
+mesh_library = ExtResource("4_sgym1")
+cell_scale = 2.0
+data = {
+"cells": PackedInt32Array(131067, 2, 458752, 65538, 0, 458752, 65539, 0, 458752, 65539, 1, 458752, 65538, 1, 458752, 65537, 1, 458752, 131069, 65531, 458752, 131070, 65531, 458752, 131071, 65532, 458752, 131066, 65535, 458752, 131067, 65535, 458752, 131067, 0, 458752, 131067, 1, 458752, 131068, 1, 458752, 131067, 3, 458752, 131068, 3, 458752, 65539, 2, 458752, 65539, 3, 458752, 131068, 2, 458752, 131066, 0, 458752, 131066, 1, 458752, 131066, 2, 458752, 131070, 65532, 458752, 131071, 65533, 458752, 131071, 65534, 458752, 131070, 65533, 458752, 65536, 65531, 458752, 65536, 65532, 458752, 65536, 65533, 458752, 65537, 65531, 458752, 65537, 65532, 458752, 65537, 0, 458752, 65538, 2, 458752, 65539, 65535, 458752, 65539, 65534, 458752, 65539, 65533, 458752, 131071, 2, 458752)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Player" parent="." unique_id=1638159780 instance=ExtResource("1_uiidf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.05, 2, -0.6648591)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=217423981]
+transform = Transform3D(1, 0, 0, 0, 0.68227863, 0.73109233, 0, -0.73109233, 0.68227863, 0, 10.265772, 8.2222395)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1153704438]
+transform = Transform3D(0.6870826, -0.72657937, 0, 0.66670305, 0.6304611, 0.3975247, -0.28883326, -0.27313232, 0.91759145, 0, 0, 0)
+
+[node name="Victim" parent="." unique_id=1610153819 instance=ExtResource("4_wof8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 4)
+
+[node name="Victim2" parent="." unique_id=721322456 instance=ExtResource("4_wof8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -4)
+
+[node name="Crate" parent="." unique_id=693066526 instance=ExtResource("3_qev0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -2)

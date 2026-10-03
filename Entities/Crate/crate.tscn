@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://4qssl4o7yfx4"]
+
+[ext_resource type="Script" uid="uid://yssl30whse2t" path="res://Entities/Crate/crate.gd" id="1_v7bw7"]
+[ext_resource type="PackedScene" uid="uid://dhxp1fal04f1t" path="res://Assets/imported_final_assets/crate.tscn" id="2_v7bw7"]
+
+[node name="Crate" type="Node3D" unique_id=693066526]
+script = ExtResource("1_v7bw7")
+metadata/_custom_type_script = "uid://dh355b8551r7w"
+
+[node name="allcornerswall" parent="." unique_id=1203886296 instance=ExtResource("2_v7bw7")]

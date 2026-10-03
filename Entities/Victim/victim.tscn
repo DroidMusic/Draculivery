@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bja30jyv6l7ko"]
+
+[ext_resource type="Script" uid="uid://c1dwpiqtdiqrh" path="res://Entities/Victim/victim.gd" id="1_veiba"]
+[ext_resource type="PackedScene" uid="uid://dhq78ikdublnt" path="res://Assets/character/victim.fbx" id="2_veiba"]
+
+[node name="Victim" type="Node3D" unique_id=1610153819]
+script = ExtResource("1_veiba")
+metadata/_custom_type_script = "uid://dh355b8551r7w"
+
+[node name="victim" parent="." unique_id=1704862023 instance=ExtResource("2_veiba")]

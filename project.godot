@@ -11,13 +11,22 @@ config_version=5
 [application]
 
 config/name="marya"
+run/main_scene="uid://s3h0lf7wg1s"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Level="*uid://cqk2ntgofx2h2"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[global_group]
+
+LevelGridMap=""
 
 [physics]
 

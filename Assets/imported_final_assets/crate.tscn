@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dhxp1fal04f1t"]
+
+[ext_resource type="PackedScene" uid="uid://cqroqmryjoavu" path="res://Assets/finaltilesets/allcornerswall.fbx" id="1_ye8vl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ylam5"]
+albedo_color = Color(0.6199149, 0.348053, 0.21801436, 1)
+
+[node name="allcornerswall" unique_id=1203886296 instance=ExtResource("1_ye8vl")]
+
+[node name="walloutpountingcorner" parent="." index="0" unique_id=1274765759]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+extra_cull_margin = 2547.51
+surface_material_override/0 = SubResource("StandardMaterial3D_ylam5")

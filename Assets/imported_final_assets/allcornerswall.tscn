@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dwbnvtmhubcjl"]
+
+[ext_resource type="PackedScene" uid="uid://cqroqmryjoavu" path="res://Assets/finaltilesets/allcornerswall.fbx" id="1_otsv1"]
+[ext_resource type="ArrayMesh" uid="uid://bao8iyu0u3flb" path="res://Assets/imported_final_assets/walls_mesh.tres" id="2_pjhl5"]
+
+[node name="allcornerswall" unique_id=114465466 instance=ExtResource("1_otsv1")]
+
+[node name="walloutpountingcorner" parent="." index="0" unique_id=926004601]
+mesh = ExtResource("2_pjhl5")
