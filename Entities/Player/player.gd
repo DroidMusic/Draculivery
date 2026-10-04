@@ -1,5 +1,8 @@
 extends Moveable
 
+func scene_setup() -> void:
+	consumer = true
+
 func _input(event: InputEvent) -> void:
 	if !event.is_pressed():
 		return
@@ -18,7 +21,8 @@ func _input(event: InputEvent) -> void:
 			return
 		_:
 			return
-	if can_move(direction):
+	if can_move(direction) and Level.total_power > 0:
+		Level.total_power -= 1
 		Level.past_turns.append([])
 		move(direction)
 		Level.successful_move.emit()

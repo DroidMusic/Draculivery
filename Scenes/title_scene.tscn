@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cnpq3vdx1u8nx"]
+
+[ext_resource type="Texture2D" uid="uid://f4gi0won8w4f" path="res://Assets/images/titlescreen.png" id="1_68ljo"]
+[ext_resource type="Script" uid="uid://4n3ybgd7ky0d" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
+
+[node name="TitleScene" type="Node3D" unique_id=1165433561]
+script = ExtResource("1_b6ftn")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2012875159]
+offset_left = -40.0
+offset_top = -1.0
+offset_right = 2418.1084
+offset_bottom = 1305.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_68ljo")
+
+[node name="Button" type="Button" parent="TextureRect" unique_id=1277675361]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 624.9459
+offset_top = -1186.0
+offset_right = 762.5731
+offset_bottom = -1141.2543
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.95, 2.95)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "START"
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

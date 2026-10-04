@@ -8,3 +8,8 @@ script = ExtResource("1_veiba")
 metadata/_custom_type_script = "uid://dh355b8551r7w"
 
 [node name="victim" parent="." unique_id=1704862023 instance=ExtResource("2_veiba")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=788359696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93557644, 0)
+light_color = Color(0.43137255, 0.6313726, 1, 1)
+light_energy = 0.459

@@ -1,3 +1,9 @@
+OmniLight3D
+AudioStreamPlayer
+TextureRect
+Button
+CanvasLayer
+Label
 GridMap
 DirectionalLight3D
 CSGBox3D

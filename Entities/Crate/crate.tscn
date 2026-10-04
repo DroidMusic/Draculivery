@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://4qssl4o7yfx4"]
 
 [ext_resource type="Script" uid="uid://yssl30whse2t" path="res://Entities/Crate/crate.gd" id="1_v7bw7"]
-[ext_resource type="PackedScene" uid="uid://dhxp1fal04f1t" path="res://Assets/imported_final_assets/crate.tscn" id="2_v7bw7"]
+[ext_resource type="PackedScene" uid="uid://cxoeof0undqyw" path="res://Assets/FINAL_assets/box5.fbx" id="2_v7bw7"]
 
 [node name="Crate" type="Node3D" unique_id=693066526]
 script = ExtResource("1_v7bw7")
 metadata/_custom_type_script = "uid://dh355b8551r7w"
 
-[node name="allcornerswall" parent="." unique_id=1203886296 instance=ExtResource("2_v7bw7")]
+[node name="box5" parent="." unique_id=1030552991 instance=ExtResource("2_v7bw7")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=952673486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.87356687, 0)
+light_color = Color(0.81677115, 0.81649345, 0, 1)
