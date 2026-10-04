@@ -33,7 +33,7 @@ func can_move(direction: Vector3i) -> bool:
 
 func move(direction: Vector3i) -> void:
 	if Level.is_floor_ice(tile + direction):
-		for i in range(1,20):
+		for i in range(1,150):
 			var extended_dir = (direction * i)
 			var nexttile = tile + extended_dir
 			

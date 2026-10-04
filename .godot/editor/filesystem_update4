@@ -11,3 +11,5 @@ res://Scenes/title_scene.gd
 res://Entities/Crate/crate.tscn
 res://Scripts/camera.gd
 res://Entities/Victim/victim.tscn
+res://Scripts/victim_count.gd
+res://Entities/Player/player.tscn

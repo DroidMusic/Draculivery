@@ -1,10 +1,9 @@
 extends Moveable
 
-var direction := Vector3i.ZERO
+@export var direction := Vector3i.ZERO
 
 func scene_setup() -> void:
 	Level.successful_move.connect(wander)
-	direction = Vector3i.LEFT
 
 func wander() -> void:	
 	if can_move(direction):

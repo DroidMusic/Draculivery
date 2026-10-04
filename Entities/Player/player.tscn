@@ -8,3 +8,7 @@ script = ExtResource("1_4ntmi")
 metadata/_custom_type_script = "uid://dh355b8551r7w"
 
 [node name="marya-eating" parent="." unique_id=77012684 instance=ExtResource("2_btcbx")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2067255196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2778327, 0)
+light_color = Color(0.6911992, 0.11743318, 0.3693291, 1)

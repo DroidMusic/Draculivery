@@ -10,7 +10,7 @@ class Move:
 var gridmap: GridMap
 var moveables: Array[Moveable]
 
-var total_power: int = 50
+var total_power: int = 190
 var total_victims: int = 0
 
 var past_turns: Array[Array]
